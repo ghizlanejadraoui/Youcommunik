@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 25vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    align-content: center;
+
+
+}
+
+.about div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    height: 50%;
+}
+
+/*  */
+.section1 {
+    width: 100%;
+    height: 25vw;
+    background-color: rgb(66, 66, 85);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 25vw;
+}
+
+.textsc1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.textsc1 h1 {
+    font-size: 40px;
+}
+
+/* sc2 */
+.section2 {
+    width: 100%;
+    height: 35vw;
+    background-color: rgb(66, 85, 68);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.textsc2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10vw;
+    padding: 0 20vw;
+}
+
+.cadreh1 {
+    border: solid 1px rgb(66, 66, 85);
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    align-content: first baseline;
+    background-color: rgb(66, 66, 85);
+    padding-top: 10px;
+    font-size: xx-large;
+
+}
+
+/* .textsc2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3vw;
+    padding-bottom: 200px;
+    margin-bottom: 70px;
+}
+
+.pcenter {
+    width: 400px;
+    height: 10px;
+    margin-left: 60px;
+    align-content:flex-end;
+    font-weight: 300px;
+}
+
+
+.imgsc2 {
+    padding-top: 200px;
+} */
+/*  */
+
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20vw;
+    background-color: blanchedalmond;
+    padding: 2vh;
+
+}
+
+.section3 a {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.section3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    height: 40%;
+    gap: 0.5vw;
+}
+
+.section3 img {
+    width: 70px;
+}
+
+/*  */
+.section5 {
+    display: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35vw;
+    background-color: blanchedalmond;
+    padding: 2vh;
+}
+
+.section5 img {
+    width: 70px;
+}
+
+.section5 a {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.section5 div:last-of-type {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    gap: 0.5vw;
+}
+
+footer {
+    background-color: rgb(66, 66, 85);
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5vw;
+}
+
+footer img {
+    width: 40px;
+    gap: 5vw;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+footer a {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+/*&media  */
+input {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+@media (max-width: 427px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 25vh;
+        background-color: black;
+        justify-content: space-evenly;
+    }
+
+    .about {
+        width: 80%;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background-color: rgb(66, 66, 85);
+        transition: 0.5s;
+    }
+
+    .about div {
+        display: inline-flexbox;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+
+    input {
+        display: block;
+        left: 30%;
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+    }
+
+    input:checked~.about {
+        left: 0;
+    }
+
+    /*  */
+    .section1 h1 {
+        font-weight: normal;
+        font-size: small;
+    }
+
+    .section1 img {
+        width: 70px;
+    }
+
+    .section1 {
+        width: 100%;
+        height: 40vw;
+        background-color: rgb(66, 66, 85);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .section1 h1 {
+        font-size: small;
+    }
+
+    /*  */
+    .section2 {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(66, 85, 68);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .section2 img {
+        height: 35vw;
+        width: 35vw;
+    }
+
+    .textsc2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        gap: 10vw;
+    }
+
+    .textsc2 img {}
+
+    .cadreh1 {
+        border: solid 1px rgb(66, 66, 85);
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        align-content: first baseline;
+        background-color: rgb(66, 66, 85);
+        padding-top: 10px;
+        font-size: medium;
+    }
+
+    /*  */
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+        justify-content: space-between;
+
+    }
+
+    .section3 div {
+        display: inline-flexbox;
+        justify-content: center;
+        gap: 2vh;
+        width: 100%;
+
+    }
+
+    /*  */
+    .section5 {
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+        justify-content: space-between;
+        gap: 5vh;
+        padding: 2vw;
+    }
+
+    .section5 div {
+        display: inline-flexbox;
+        justify-content: center;
+        gap: 4vh;
+        width: 100%;
+
+    }
+
+    footer {
+        background-color: rgb(66, 66, 85);
+        width: 100%;
+        height: 100vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 20vw;
+    }
+
+    footer img {
+        width: 50px;
+        gap: 5vw;
+        display: wrap;
+        flex-wrap: wrap;
+    }
+
+    footer a {
+        font-size: large;
+        font-weight: bolder;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen ( max-with: 427px ) */
+
+/* { input{
+            display: block;
+            background-color: red;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: 100vh;
+            background-color: rgb(66, 66, 85);
+            justify-content: space-evenly;
+        }
+    } */
